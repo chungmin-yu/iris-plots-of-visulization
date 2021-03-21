@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Iris Parallel Coordinate Plots</title>
+    <link rel="stylesheet" href="irisParallel.css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+	</head>
+	<body>
+  <h1 style="top:-25px; left:135px; position:absolute">Iris Parallel Coordinate Plots</h1>
+  <div style="top:95px; left:30px; position:absolute;">  
+  <svg width="960" height="400"></svg>
+  </div>
+  <select id="select"; style="top:80px; left:620px; position:absolute">
+    <option value="1234" style="color:#FF4D40" selected>sepalLength sepalWidth petalLength petalWidth</option>
+    <option value="1243" style="color:#FF4D40">sepalLength sepalWidth petalWidth petalLength</option>
+    <option value="1324" style="color:#FF4D40">sepalLength petalLength sepalWidth petalWidth</option>
+    <option value="1342" style="color:#FF4D40">sepalLength petalLength petalWidth sepalWidth</option>
+    <option value="1423" style="color:#FF4D40">sepalLength petalWidth sepalWidth petalLength</option>
+    <option value="1432" style="color:#FF4D40">sepalLength petalWidth petalLength sepalWidth</option>
+    <option value="2134" style="color:#006374">sepalWidth sepalLength petalLength petalWidth</option>
+    <option value="2143" style="color:#006374">sepalWidth sepalLength petalWidth petalLength</option>
+    <option value="2314" style="color:#006374">sepalWidth petalLength sepalLength petalWidth</option>
+    <option value="2341" style="color:#006374">sepalWidth petalLength petalWidth sepalLength</option>
+    <option value="2413" style="color:#006374">sepalWidth petalWidth sepalLength petalLength</option>
+    <option value="2431" style="color:#006374">sepalWidth petalWidth petalLength sepalLength</option>
+    <option value="3124" style="color:#006400">petalLength sepalLength sepalWidth petalWidth</option>
+    <option value="3142" style="color:#006400">petalLength sepalLength petalWidth sepalWidth</option>
+    <option value="3214" style="color:#006400">petalLength sepalWidth sepalLength petalWidth</option>
+    <option value="3241" style="color:#006400">petalLength sepalWidth petalWidth sepalLength</option>
+    <option value="3412" style="color:#006400">petalLength petalWidth sepalLength sepalWidth</option>
+    <option value="3421" style="color:#006400">petalLength petalWidth sepalWidth sepalLength</option>
+    <option value="4123" style="color:#483D8B">petalWidth sepalLength sepalWidth petalLength</option>
+    <option value="4132" style="color:#483D8B">petalWidth sepalLength petalLength sepalWidth</option>
+    <option value="4213" style="color:#483D8B">petalWidth sepalWidth sepalLength petalLength</option>
+    <option value="4231" style="color:#483D8B">petalWidth sepalWidth petalLength sepalLength</option>
+    <option value="4312" style="color:#483D8B">petalWidth petalLength sepalLength sepalWidth</option>
+    <option value="4321" style="color:#483D8B">petalWidth petalLength sepalWidth sepalLength</option>
+   	</select>    
+  <div id="typesetting"; style="left:700px; position:absolute;"></div>
+  <script src="irisParallel.js"></script>
+  </body>
+</html>
